@@ -9,10 +9,14 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/bd1bebd7e5.js"
+      crossorigin="anonymous"
+    ></script>
     <title>HTML Form</title>
   </head>
   <body>
-    <div class="row">
+    <div class="row p-4">
       <div class="col-2"></div>
 
       <div class="card col-8">
@@ -26,6 +30,7 @@
           <!--Alert-->
           <p class="alert alert-danger" role="alert">Some fields are missing</p>
 
+          <!-- Row 1: Card, CVC, Amount -->
           <div class="row">
             <div class="col-5">
               <label for="basic-url" class="form-label">Card #</label>
@@ -60,6 +65,7 @@
             </div>
           </div>
 
+          <!-- Row 2: First Name, Last Name -->
           <div class="row">
             <div class="col-6">
               <label for="basic-url" class="form-label">First Name</label>
@@ -81,106 +87,167 @@
             </div>
           </div>
 
+          <!-- Row 3: City, State, Postal Code -->
           <div class="row">
-              <div class="col-6">
-                <label for="basic-url" class="form-label">City</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  aria-label="Username"
-                  aria-describedby="addon-wrapping"
-                />
-              </div>
-              <div class="col-3">
-                <label for="basic-url" class="form-label">State</label>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Open this select menu</option>
-                  <option value="1">Alabama</option>
-                  <option value="2">Alaska</option>
-                  <option value="3">Arizona</option>
-                  <option value="4">Arkansas</option>
-                  <option value="5">California</option>
-                  <option value="6">Colorado</option>
-                  <option value="7">Connecticut</option>
-                  <option value="8">Delaware</option>
-                  <option value="9">Florida</option>
-                  <option value="10">Georgia</option>
-                  <option value="11">Hawaii</option>
-                  <option value="12">Idaho</option>
-                  <option value="13">Illinois</option>
-                  <option value="14">Indiana</option>
-                  <option value="15">Iowa</option>
-                  <option value="16">Kansas</option>
-                  <option value="17">Kentucky</option>
-                  <option value="18">Louisiana</option>
-                  <option value="19">Maine</option>
-                  <option value="20">Maryland</option>
-                  <option value="21">Massachusetts</option>
-                  <option value="22">Michigan</option>
-                  <option value="23">Minnesota</option>
-                  <option value="24">Mississippi</option>
-                  <option value="25">Missouri</option>
-                  <option value="26">Montana</option>
-                  <option value="27">Nebraska</option>
-                  <option value="28">Nevada</option>
-                  <option value="29">New Hampshire</option>
-                  <option value="30">New Jersey</option>
-                  <option value="31">New Mexico</option>
-                  <option value="32">New York</option>
-                  <option value="33">North Carolina</option>
-                  <option value="34">North Dakota</option>
-                  <option value="35">Ohio</option>
-                  <option value="36">Oklahoma</option>
-                  <option value="37">Oregon</option>
-                  <option value="38">Pennsylvania</option>
-                  <option value="39">Rhode Island</option>
-                  <option value="40">South Carolina</option>
-                  <option value="41">South Dakota</option>
-                  <option value="42">Tennessee</option>
-                  <option value="43">Texas</option>
-                  <option value="44">Utah</option>
-                  <option value="45">Vermont</option>
-                  <option value="46">Virginia</option>
-                  <option value="47">Washington</option>
-                  <option value="48">West Virginia</option>
-                  <option value="49">Wisconsin</option>
-                  <option value="50">Wyoming</option>
-                </select>
-              </div>
-              <div class="col-3">
-                <label for="basic-url" class="form-label">Postal Code</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  aria-label="Username"
-                  aria-describedby="addon-wrapping"
-                />
-              </div>
+            <div class="col-6">
+              <label for="basic-url" class="form-label">City</label>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Username"
+                aria-describedby="addon-wrapping"
+              />
             </div>
-          </div>
-          <div class="row">
-            <div class="btn-group-horizontal" role="group" aria-label="horizontal radio toggle button group">
-              <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
-              <label class="btn btn-outline-danger" for="vbtn-radio1">Radio 1</label>
-              <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
-              <label class="btn btn-outline-danger" for="vbtn-radio2">Radio 2</label>
-              <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
-              <label class="btn btn-outline-danger" for="vbtn-radio3">Radio 3</label>
-              <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
-              <label class="btn btn-outline-danger" for="vbtn-radio3">Radio 3</label>
+            <div class="col-3">
+              <label for="basic-url" class="form-label">State</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">Alabama</option>
+                <option value="2">Alaska</option>
+                <option value="3">Arizona</option>
+                <option value="4">Arkansas</option>
+                <option value="5">California</option>
+                <option value="6">Colorado</option>
+                <option value="7">Connecticut</option>
+                <option value="8">Delaware</option>
+                <option value="9">Florida</option>
+                <option value="10">Georgia</option>
+                <option value="11">Hawaii</option>
+                <option value="12">Idaho</option>
+                <option value="13">Illinois</option>
+                <option value="14">Indiana</option>
+                <option value="15">Iowa</option>
+                <option value="16">Kansas</option>
+                <option value="17">Kentucky</option>
+                <option value="18">Louisiana</option>
+                <option value="19">Maine</option>
+                <option value="20">Maryland</option>
+                <option value="21">Massachusetts</option>
+                <option value="22">Michigan</option>
+                <option value="23">Minnesota</option>
+                <option value="24">Mississippi</option>
+                <option value="25">Missouri</option>
+                <option value="26">Montana</option>
+                <option value="27">Nebraska</option>
+                <option value="28">Nevada</option>
+                <option value="29">New Hampshire</option>
+                <option value="30">New Jersey</option>
+                <option value="31">New Mexico</option>
+                <option value="32">New York</option>
+                <option value="33">North Carolina</option>
+                <option value="34">North Dakota</option>
+                <option value="35">Ohio</option>
+                <option value="36">Oklahoma</option>
+                <option value="37">Oregon</option>
+                <option value="38">Pennsylvania</option>
+                <option value="39">Rhode Island</option>
+                <option value="40">South Carolina</option>
+                <option value="41">South Dakota</option>
+                <option value="42">Tennessee</option>
+                <option value="43">Texas</option>
+                <option value="44">Utah</option>
+                <option value="45">Vermont</option>
+                <option value="46">Virginia</option>
+                <option value="47">Washington</option>
+                <option value="48">West Virginia</option>
+                <option value="49">Wisconsin</option>
+                <option value="50">Wyoming</option>
+              </select>
+            </div>
+            <div class="col-3">
+              <label for="basic-url" class="form-label">Postal Code</label>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Username"
+                aria-describedby="addon-wrapping"
+              />
             </div>
           </div>
 
-          <p class="card-text">
-            With supporting text below as a natural lead-in to additional
-            content.
-          </p>
-          <div class="card-footer text-body-secondary">
-            <a href="#" class="btn btn-secondary">Cancel</a>
-            <a href="#" class="btn btn-primary">Send</a>
+          <!-- Row 4: Payment Icons & Comments -->
+          <div class="row p-1">
+            <div class="col-3">
+              <label for="basic-url" class="form-label">We Accept:</label>
+              <div class="bg-secondary rounded p-2">
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="radioDefault"
+                    id="radioDefault1"
+                  />
+                  <label class="form-check-label" for="radioDefault1">
+                    <i
+                      class="fa-brands fa-cc-mastercard"
+                      style="color: #ffffff"
+                    ></i>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="radioDefault"
+                    id="radioDefault2"
+                  />
+                  <label class="form-check-label" for="radioDefault2">
+                    <i class="fa-brands fa-cc-visa" style="color: #ffffff"></i>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="radioDefault"
+                    id="radioDefault3"
+                  />
+                  <label class="form-check-label" for="radioDefault3">
+                    <i
+                      class="fa-brands fa-cc-diners-club"
+                      style="color: #ffffff"
+                    ></i>
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="radioDefault"
+                    id="radioDefault4"
+                    checked
+                  />
+                  <label class="form-check-label" for="radioDefault4">
+                    <i class="fa-brands fa-cc-amex" style="color: #ffffff"></i>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-3"></div>
+
+            <div class="col-6">
+              <label for="floatingTextarea" class="form-label">Comments</label>
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="floatingTextarea"
+                rows="3"
+              ></textarea>
+            </div>
           </div>
         </div>
+        <!--End Card Body-->
+
+        <!--Card Footer-->
+        <div
+          class="card-footer text-body-secondary d-grid gap-2 d-md-flex justify-content-md-end"
+        >
+          <a href="#" class="btn btn-secondary">Cancel</a>
+          <a href="#" class="btn btn-primary">Send</a>
+        </div>
       </div>
+      <!--End Card-->
+
       <div class="col-2"></div>
     </div>
 
